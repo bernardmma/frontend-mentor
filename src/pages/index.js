@@ -29,7 +29,7 @@ const Home = () => {
       </StyledLink>
 
       <Text>Testing out: Styled Components, CSS Grid</Text>
-      <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank">Challenge can be found here.</a>
+      <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank" rel="noreferrer" >Challenge can be found here.</a>
       
       <hr />
     </Container>
