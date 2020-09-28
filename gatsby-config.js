@@ -7,5 +7,5 @@
 module.exports = {
   /* Your site config here */
   pathPrefix: '/frontend-mentor',
-  plugins: [],
+  plugins: [`gatsby-plugin-styled-components`],
 }
