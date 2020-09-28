@@ -1,6 +1,5 @@
 import React from "react"
-import styled from 'styled-components';
-import '../styles/social-proof/style.css';
+import styled, { createGlobalStyle }  from 'styled-components';
 import Title from '../components/social-proof/Title';
 import coltonImg from '../assets/social-proof/images/image-colton.jpg';
 import anneImg from '../assets/social-proof/images/image-anne.jpg';
@@ -8,6 +7,40 @@ import ireneImg from '../assets/social-proof/images/image-irene.jpg';
 import Description from '../components/social-proof/Description';
 import RatingBlock from '../components/social-proof/RatingBlock';
 import Testimonial from '../components/social-proof/Testimonial';
+import bgPatternTopMobile from '../assets/social-proof/images/bg-pattern-top-mobile.svg';
+import bgPatternBottomMobile from '../assets/social-proof/images/bg-pattern-bottom-mobile.svg';
+import bgPatternTopDesktop from '../assets/social-proof/images/bg-pattern-top-desktop.svg';
+import bgPatternBottomDesktop from '../assets/social-proof/images/bg-pattern-bottom-desktop.svg';
+
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+  :root {
+    --very-dark-magenta-primary: hsl(300, 43%, 22%);
+    --soft-pink-primary: hsl(333, 80%, 67%);
+    --dark-grayish-magenta-neutral: hsl(303, 10%, 53%);
+    --light-grayish-magenta-neutral: hsl(300, 24%, 96%);
+    --white-neutral: hsl(0, 0%, 100%);
+  }
+
+  body {
+    background-image: url(${bgPatternTopMobile}), url(${bgPatternBottomMobile});
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 200px, 100% 200px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 960px) {
+    body {
+      background-image: url(${bgPatternTopDesktop}), url(${bgPatternBottomDesktop});
+      background-size: 40% 60%, 40% 80%;
+    }
+  }
+`
 
 const Container = styled.div`
   margin: 0 auto;
@@ -54,6 +87,7 @@ const BottomContainer = styled.div`
 export default function SocialProofSection() {
   return (
     <>
+      <GlobalStyle />
       <Container>
         <TopContainer>
           <Content>
