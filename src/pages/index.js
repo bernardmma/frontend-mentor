@@ -16,6 +16,10 @@ const StyledLink = styled(props => <Link {...props} />)`
   text-decoration: none;
 `;
 
+const Text = styled.p`
+  margin-bottom: 1em;
+`;
+
 const Home = () => {
   return (
     <Container>
@@ -24,8 +28,9 @@ const Home = () => {
         <h1>Social Proof Section</h1>
       </StyledLink>
 
+      <Text>Testing out: Styled Components, CSS Grid</Text>
       <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank">Challenge can be found here.</a>
-
+      
       <hr />
     </Container>
   );
