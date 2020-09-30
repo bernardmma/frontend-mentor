@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import socialProofImg from '../assets/social-proof/images/social-proof.jpg';
@@ -23,6 +24,11 @@ const Text = styled.p`
 const Home = () => {
   return (
     <Container>
+      <Helmet>
+        <html lang="en" />
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
       <StyledLink to="/social-proof-section">
         <Image src={socialProofImg} alt="website" />
         <h1>Social Proof Section</h1>

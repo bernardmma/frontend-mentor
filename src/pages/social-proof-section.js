@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from 'react-helmet';
 import styled, { createGlobalStyle }  from 'styled-components';
 import Title from '../components/social-proof/Title';
 import coltonImg from '../assets/social-proof/images/image-colton.jpg';
@@ -87,6 +88,11 @@ const BottomContainer = styled.div`
 export default function SocialProofSection() {
   return (
     <>
+      <Helmet>
+        <html lang="en" />
+        <meta charSet="utf-8" />
+        <title>Social Proof Section</title>
+      </Helmet>
       <GlobalStyle />
       <Container>
         <TopContainer>
