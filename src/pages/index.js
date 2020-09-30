@@ -26,7 +26,6 @@ const Home = () => {
     <Container>
       <Helmet>
         <html lang="en" />
-        <meta charSet="utf-8" />
         <title>Home</title>
       </Helmet>
       <StyledLink to="/social-proof-section">

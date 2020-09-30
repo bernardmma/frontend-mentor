@@ -90,7 +90,6 @@ export default function SocialProofSection() {
     <>
       <Helmet>
         <html lang="en" />
-        <meta charSet="utf-8" />
         <title>Social Proof Section</title>
       </Helmet>
       <GlobalStyle />
